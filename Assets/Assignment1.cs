@@ -74,53 +74,53 @@ public class Assignment1 : ProcessingLite.GP21
         //Fill(Random.Range(0, 256), Random.Range(0, 256), Random.Range(0, 256));
         //Square(9, 5, 0.5f);
 
-        ////4. & 5. Parabolic loop
-        //float x1 = 1f;
-        //float y1 = 1f;
-        //float x2 = 1f;
-        //float y2 = 9f;
+        //4. & 5. Parabolic loop
+        float x1 = 1f;
+        float y1 = 1f;
+        float x2 = 1f;
+        float y2 = 9f;
 
-        //StrokeWeight(0.2f);
+        StrokeWeight(0.2f);
 
-        //for (int i = 0; i < 33; i++)
-        //{
-        //    if (i % 3 == 0)
-        //    {
-        //        Stroke(Random.Range(0, 256), Random.Range(0, 256), Random.Range(0, 256));
-        //    }
-        //    else 
-        //    {
-        //        Stroke(255);
-        //    }
-
-
-        //    if (i < 8)
-        //    {
-        //        Line(x1, y1, x2, y2);
-        //        y1++;
-        //        x2++;
-        //    }
-        //    else if (i < 16)
-        //    {
-        //        Line(x1, y1, x2, y2);
-        //        x1++;
-        //        y2--;
-        //    }
-        //    else if (i < 24)
-        //    {
-        //        Line(x1, y1, x2, y2);
-        //        y1--;
-        //        x2--;
-        //    }
-        //    else if (i < 33)
-        //    {
-        //        Line(x1, y1, x2, y2);
-        //        x1--;
-        //        y2++;
-        //    }
+        for (int i = 0; i < 33; i++)
+        {
+            if (i % 3 == 0)
+            {
+                Stroke(Random.Range(0, 256), Random.Range(0, 256), Random.Range(0, 256));
+            }
+            else
+            {
+                Stroke(255);
+            }
 
 
-        //}
+            if (i < 8)
+            {
+                Line(x1, y1, x2, y2);
+                y1++;
+                x2++;
+            }
+            else if (i < 16)
+            {
+                Line(x1, y1, x2, y2);
+                x1++;
+                y2--;
+            }
+            else if (i < 24)
+            {
+                Line(x1, y1, x2, y2);
+                y1--;
+                x2--;
+            }
+            else if (i < 33)
+            {
+                Line(x1, y1, x2, y2);
+                x1--;
+                y2++;
+            }
+
+
+        }
 
     }
 
